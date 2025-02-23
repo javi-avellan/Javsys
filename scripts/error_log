@@ -1,0 +1,1 @@
+[19-Jun-2024 12:41:00 America/Guayaquil] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/laperlag/javsys.xyz/scripts/form_process.php:168) in /home/laperlag/javsys.xyz/scripts/form_process.php on line 169

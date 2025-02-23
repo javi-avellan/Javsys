@@ -1,0 +1,143 @@
+footer {
+    position: relative;
+    background-color: #333;
+    color: #999;
+    min-height: 150px;
+    font-family: 'Exo', sans-serif;
+}
+
+footer section {
+    display: flex;
+    padding-top: 20px;
+    font-size: 0.9em;
+    margin: 0 10%;
+}
+
+.pie {
+    width: 30%;
+    margin-left: 2%;
+}
+
+.pie ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pie ul li {    
+    padding: 5px 0 0 0;
+}
+
+.pie ul li a{
+    text-decoration: none;
+    color: #eee;   
+}
+
+.pie ul li a:hover {
+    color: #777;
+}
+
+footer section aside {
+    width: 30%;
+    text-align: center;
+}
+
+.centro {
+    float: none;
+}
+
+.centro ul li {
+    display: inline-block;
+    padding: 0 5px 0 5px; 
+    text-decoration: none;
+    margin: 0;
+}
+
+#linkedin {
+    display: block;
+    min-height: 32px;
+    min-width: 32px;
+    padding-top: 15px;
+    background-image: url(../images/social/linkedin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    color: #222;
+}
+
+#linkedin:hover {
+    background-image: url(../images/social/linkedin2.png);
+}
+
+#xtwitter {
+    display: block;
+    min-height: 32px;
+    min-width: 32px;
+    padding-top: 15px;
+    background-image: url(../images/social/x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    color: #222;
+}
+
+#xtwitter:hover {
+    background-image: url(../images/social/x2.png);
+}
+
+#discord {
+    display: block;
+    min-height: 32px;
+    min-width: 32px;
+    padding-top: 15px;
+    background-image: url(../images/social/discord.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    color: #222;
+}
+
+#discord:hover {
+    background-image: url(../images/social/discord2.png);
+}
+
+#enlacesfooter {
+    width: 30%;
+    margin-right: 2%;
+}
+
+.derecha {
+    float: right;
+}
+
+.pie #enlacesfooter img {
+    float: left;
+}
+
+.pie #enlacesfooter span {
+    float: left;
+    padding: 8px 0 0 10px;
+    color: #ddd;
+}
+
+.copyright {
+    display: inline-flex;
+    margin: 20px 10%;
+    padding: 20px 0px;
+    min-height: 80px;
+    border-top: 1px solid #bbb;
+    font-family: 'Exo', sans-serif;
+    font-size:x-small;
+    width: 80%;
+}
+
+.copyright #paragrah {
+    width: 95%;
+}
+
+#copyright-p1 {
+    color: #999;
+}
+
+#copyright-p2 {
+    color: #ddd;
+}

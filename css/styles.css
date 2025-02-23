@@ -1,0 +1,222 @@
+@font-face {
+    font-family: ChakraLight;
+    src: url(../fonts/ChakraPetch-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: ChakraMedium;
+    src: url(../fonts/ChakraPetch-Medium.ttf);
+    font-weight:normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+body {
+    background-color: #fff;
+    margin: 0;
+    color: #555;
+}
+
+/* INICIO CABECERA */
+header {
+    position:fixed; /*posición fija*/
+    top: 0; /*distancia superior*/
+    z-index: 1;
+    width: 100%;
+    background-color: #ccc;
+    border-bottom: 1px solid #bbb;
+}
+
+/* INICIO LOGO */
+
+.cabecera img {
+    float: left;
+    min-width: 60px;
+    background-image: url(../images/apple-icon-60x60.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 5%;
+    color: #ccc;
+}
+
+.cabecera h1 {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #777;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.8rem;
+}
+
+.cabecera h1 strong {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #11acac;
+}
+
+.cabecera a h1 {
+    position: relative;
+} 
+
+.cabecera a h1::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #11acac, #468c91, #777);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cabecera a h1::before {
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.cabecera a h1:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+/* FIN LOGO */
+
+/* INICIO MENU */
+nav {
+    font-family: ChakraLight;
+    float: right;
+    margin-right: 5%;
+}
+
+.ulMenu {
+    display: block;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+} 
+
+.ulMenu span:first-child {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.ulMenu span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.ulMenu span {
+    transition: transform 0.2s ease-out;
+}
+  
+.ulMenu:hover span:first-child {
+    transform: translateY(100%);
+}
+  
+.ulMenu:hover span:last-child {
+    transform: none;
+}
+/* FIN MENU */
+/* FIN CABECERA */
+
+/* FORMULARIO */
+.forms {
+    background-color: white;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+
+.forms h2 {
+    padding-top: 2%;
+    font-size: 3em;
+    font-weight: 100;
+    color: #222;
+}
+
+.forms p {
+    color: #888;
+}
+
+
+.place-color::placeholder {
+    color: #ccc;
+}
+
+.forms #boton {
+    padding: 20px 0;
+}
+
+.forms button {
+    padding: 10px 20px;
+    background-color: #089696;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+
+.forms button:hover {
+    background-color: #aaa;
+    color: #222;
+}
+/*FIN FORMULARIO*/
+
+/* RESEÑA PERSONAL */
+
+.summary {
+    font-family: 'Exo',sans-serif;
+}
+
+.summary h2 {
+    font-family: 'ChakraLight', 'Exo', sans-serif;
+    padding-top: 2%;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* PROYECTO ACTUAL */
+.project {
+    font-family: 'ChakraLight', 'Exo', sans-serif;
+    min-height: 650px;    
+    background-image: url(../images/fondoDark.png);
+    background-size: initial;
+    background-position: center;
+    padding-top: 5px;
+}
+
+.project #title {
+    padding-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.project #title h2 {
+    display: inline-flex;
+    font-weight: 100;
+    font-size: 2.3em;
+    color: white;
+}
+
+.project #title h2 img {
+    display: inline-flex;
+}
+
+.parrafo {
+    padding: 10% 0 0 0;
+    color: white;
+    font-size: x-large;
+    font-family: 'Exo', sans-serif;
+}
