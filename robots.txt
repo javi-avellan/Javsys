@@ -1,4 +1,4 @@
 #Esto es el archivo para evitar malware
+#Le colocamos una segunda linea
 
-
-#Esto es el cambio para la rama master
+#Esto es la rama que resuelve el conflicto
