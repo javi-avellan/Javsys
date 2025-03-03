@@ -1,4 +1,3 @@
-#Esto es el archivo para evitar malware
-#Le colocamos una segunda linea
-
-#Esto es la rama que resuelve el conflicto
+User-agent: *
+Disallow: /fonts/
+Disallow: /images/
